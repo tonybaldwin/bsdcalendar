@@ -1,0 +1,18 @@
+This is standard unix calendar program for Linux, ported from OpenBSD.
+
+While porting I removed all code for mailing calendar to users (-a).
+If you still need it, just do something like this:
+
+awk 'BEGIN{ FS = ":" } { if($7=="/bin/bash") print $1 }' </etc/passwd |(
+while read user; do
+    su $user -c "calendar | mail $user"
+done
+)
+
+NOTE: I've never tested this!
+
+Thanks to all OpenBSD developers for good OS and especially for good 
+calendar program.
+
+Andrey Ulanov <drey@rt.mipt.ru>
+$Id: README,v 1.3 2002/11/27 07:58:46 drey Exp $

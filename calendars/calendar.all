@@ -1,0 +1,26 @@
+/*
+ * International and national calendar files
+ *
+ * $Id: calendar.all,v 1.1.1.1 2002/11/26 23:37:38 drey Exp $
+ */
+
+#ifndef _calendar_all_
+#define _calendar_all_
+
+#include <calendar.birthday>
+#include <calendar.christian>
+#include <calendar.computer>
+#include <calendar.croatian>
+#include <calendar.fictional>
+#include <calendar.french>
+#include <calendar.german>
+#include <calendar.history>
+#include <calendar.holiday>
+#include <calendar.judaic>
+#include <calendar.music>
+#include <calendar.pagan>
+#include <calendar.russian>
+#include <calendar.usholiday>
+#include <calendar.world>
+
+#endif /* !_calendar_all_ */
